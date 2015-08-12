@@ -1,6 +1,6 @@
 # Six Week Technical Challenge
 
-In response to [Christopher Burke's answer](http://qr.ae/RCI2cL) to the question ['What is the difference between a programmer, a good programmer, and a great programmer?(http://www.quora.com/What-is-the-difference-between-a-programmer-a-good-programmer-and-a-great-programmer)'] we have built this technical challenge to assess where you are at after six weeks.
+In response to [Christopher Burke's answer](http://qr.ae/RCI2cL) to the question ['What is the difference between a programmer, a good programmer, and a great programmer?'](http://www.quora.com/What-is-the-difference-between-a-programmer-a-good-programmer-and-a-great-programmer) we have built this technical challenge to assess where you are at after six weeks.
 
 The details of the challenge are included below. Hints are included in the Guidelines.md file. Do your best to complete the challenge independently, without the hints or guidelines. However, use them if you are stuck for 20 minutes.
 
