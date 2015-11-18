@@ -11,5 +11,5 @@ Following the curriculum you have learned in class, the mentor and instructor te
 
 ## Potentially Helpful Class Solution Code
 
-1. Day-X for Master-Detail, MVC Design, and Persistence.
-2. Intermediate Table View Playground for custom cells and custom delegates.
+1. [Journal](https://github.com/DevMountain/Journal) for Master-Detail, MVC Design, and Persistence.
+2. [Task](https://github.com/DevMountain/Task) for custom cells and custom delegates.
