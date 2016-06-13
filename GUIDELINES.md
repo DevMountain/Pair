@@ -17,3 +17,9 @@ This is a coding challenge that would be given 60-90 minutes in a technical inte
 
 1. [Journal](https://github.com/DevMountain/Journal) for Master-Detail, MVC Design, and Persistence.
 2. [Task](https://github.com/DevMountain/Task) for custom cells and custom delegates.
+
+## Screenshots
+
+![List](https://github.com/DevMountain/Pair/blob/master/1.png)
+![Randomized list](https://github.com/DevMountain/Pair/blob/master/2.png)
+![Adding an entity](https://github.com/DevMountain/Pair/blob/master/3.png)
