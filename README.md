@@ -8,16 +8,15 @@ The details of the challenge are included below. Hints are included in the Guide
 
 Fork this repository. Complete the challenge, push your version with a clear commit history to your own Github profile.
 
-Write a Pair Randomizer application that takes a list of objects and pairs them together. Potential use cases may be creating an app for Pair Programming teams, or matching people for a Secret Santa gift exchange. Add the following features:
+Write a single view Pair Randomizer application that takes a list of objects and pairs them together. Potential use cases may be creating an app for Pair Programming teams, or matching people for a Secret Santa gift exchange. Add the following features:
 
-1. Add entities to a list
-2. Edit the entities
-3. Display a list of the added entities, with some visible annotation to convey that two of the entities have been paired together
-4. Include a button that allows me to randomize the list
-5. Persist the list of entities
+1. Add entities to a list in a table list view
+2. Display a list of the added entities grouped by section
+3. Include a button that allows me to randomize the list
+4. Persist the list of entities
 
 Take as much time as needed to complete the challenge. Add a note at the bottom of this README.md file with how long it took you to complete the challenge.
 
 Example:
 
-```Completed in 2.5 hours.```
+```Completed in 3.5 hours.```
