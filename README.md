@@ -15,7 +15,7 @@ Write a single view Pair Randomizer application that takes a list of objects and
 3. Include a button that allows me to randomize the list
 4. Persist the list of entities
 
-Take as much time as needed to complete the challenge. Add a note at the bottom of this README.md file with how long it took you to complete the challenge.
+Note: You may use CoreData for persistence but you *MAY NOT* use a NSFetchedResultsController
 
 Example:
 
