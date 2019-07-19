@@ -16,7 +16,3 @@ Write a single view Pair Randomizer application that takes a list of objects and
 4. Persist the list of entities
 
 Note: You may use CoreData for persistence but you *MAY NOT* use a NSFetchedResultsController
-
-Example:
-
-```Completed in 3.5 hours.```
