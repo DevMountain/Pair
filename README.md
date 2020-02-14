@@ -14,5 +14,6 @@ Write a single view Pair Randomizer application that takes a list of objects and
 2. Display a list of the added entities grouped by section
 3. Include a button that allows me to randomize the list
 4. Persist the list of entities
+5. Swipe to delete
 
 Note: You may use CoreData for persistence but you *MAY NOT* use a NSFetchedResultsController
