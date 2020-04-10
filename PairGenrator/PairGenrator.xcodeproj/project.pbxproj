@@ -16,6 +16,8 @@
 		4E941F382440CB8900B8F869 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E941F372440CB8900B8F869 /* CoreData.swift */; };
 		4E941F3A2440CBF300B8F869 /* Person+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E941F392440CBF300B8F869 /* Person+Convenience.swift */; };
 		4E941F3D2440CDA300B8F869 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E941F3C2440CDA300B8F869 /* PersonController.swift */; };
+		4E941F402440DCF000B8F869 /* PairsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E941F3F2440DCF000B8F869 /* PairsTableViewController.swift */; };
+		4E941F422440DD1400B8F869 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E941F412440DD1400B8F869 /* PersonDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4E941F372440CB8900B8F869 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		4E941F392440CBF300B8F869 /* Person+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Convenience.swift"; sourceTree = "<group>"; };
 		4E941F3C2440CDA300B8F869 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		4E941F3F2440DCF000B8F869 /* PairsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsTableViewController.swift; sourceTree = "<group>"; };
+		4E941F412440DD1400B8F869 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 				4E941F272440CAC700B8F869 /* PairGenrator.xcdatamodeld */,
 				4E941F3B2440CC3B00B8F869 /* Model */,
 				4E941F3E2440CDA800B8F869 /* ModelController */,
+				4E941F432440DD1C00B8F869 /* ViewController */,
 			);
 			path = PairGenrator;
 			sourceTree = "<group>";
@@ -106,6 +111,15 @@
 				4E941F3C2440CDA300B8F869 /* PersonController.swift */,
 			);
 			path = ModelController;
+			sourceTree = "<group>";
+		};
+		4E941F432440DD1C00B8F869 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E941F3F2440DCF000B8F869 /* PairsTableViewController.swift */,
+				4E941F412440DD1400B8F869 /* PersonDetailViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +193,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E941F422440DD1400B8F869 /* PersonDetailViewController.swift in Sources */,
+				4E941F402440DCF000B8F869 /* PairsTableViewController.swift in Sources */,
 				4E941F382440CB8900B8F869 /* CoreData.swift in Sources */,
 				4E941F1F2440CAC700B8F869 /* AppDelegate.swift in Sources */,
 				4E941F212440CAC700B8F869 /* SceneDelegate.swift in Sources */,
