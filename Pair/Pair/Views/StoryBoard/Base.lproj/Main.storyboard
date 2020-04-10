@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FuG-yQ-ZC7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Table View Controller-->
+        <scene sceneID="GDV-pY-wyw">
+            <objects>
+                <tableViewController id="LMS-2v-jXk" customClass="ListTableViewController" customModule="Pair" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4Rh-YT-4MU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" id="gbW-XY-d0x">
+                            <rect key="frame" x="0.0" y="104" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem width="136" style="plain" systemItem="fixedSpace" id="vAs-NZ-j2t"/>
+                                <barButtonItem title="Create Pairs" id="7hf-Yu-fG3">
+                                    <connections>
+                                        <action selector="createPairsButtonTapped:" destination="LMS-2v-jXk" id="Vto-7W-frj"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentCell" textLabel="AqJ-nc-gNg" rowHeight="48" style="IBUITableViewCellStyleDefault" id="b7x-A2-cSC">
+                                <rect key="frame" x="0.0" y="28" width="414" height="48"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b7x-A2-cSC" id="WFR-XS-cf1">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Student" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AqJ-nc-gNg">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="48"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="wYW-8A-Tbw" kind="show" identifier="toStudentDetailVC" id="yQa-B6-jnF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LMS-2v-jXk" id="vZ3-Qz-yu7"/>
+                            <outlet property="delegate" destination="LMS-2v-jXk" id="uGA-qA-7jv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="n6J-xC-gHe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="C0o-pl-tf1">
+                            <connections>
+                                <action selector="addButtontapped:" destination="LMS-2v-jXk" id="wDN-hS-lSf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yW7-p4-MCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192.753623188406" y="118.52678571428571"/>
+        </scene>
+        <!--Student Detail View Controller-->
+        <scene sceneID="lv7-cz-x8j">
+            <objects>
+                <viewController id="wYW-8A-Tbw" customClass="StudentDetailViewController" customModule="Pair" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qNZ-xV-cki">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="boz-se-jcg">
+                                <rect key="frame" x="10" y="138" width="394" height="224"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update Student Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmR-m4-w3b">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="55.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6oX-cb-4H4">
+                                        <rect key="frame" x="0.0" y="84.5" width="394" height="55"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ0-Op-JFK">
+                                        <rect key="frame" x="0.0" y="168.5" width="394" height="55.5"/>
+                                        <state key="normal" title="Save"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.58960725359999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveButtonTapped:" destination="wYW-8A-Tbw" eventType="touchUpInside" id="dXk-JE-6KC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GrD-PF-iYt" firstAttribute="trailing" secondItem="boz-se-jcg" secondAttribute="trailing" constant="10" id="V4H-IB-uf5"/>
+                            <constraint firstItem="boz-se-jcg" firstAttribute="top" secondItem="GrD-PF-iYt" secondAttribute="top" constant="50" id="d2u-1v-Pmc"/>
+                            <constraint firstItem="GrD-PF-iYt" firstAttribute="bottom" secondItem="boz-se-jcg" secondAttribute="bottom" constant="500" id="kWd-bk-9yQ"/>
+                            <constraint firstItem="boz-se-jcg" firstAttribute="leading" secondItem="GrD-PF-iYt" secondAttribute="leading" constant="10" id="x5r-h7-tuc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GrD-PF-iYt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9oE-1B-afs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="fz3-6l-zqc">
+                            <connections>
+                                <action selector="cencelButtonTapped:" destination="wYW-8A-Tbw" id="hxo-nq-GZP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="updateStudentTextField" destination="6oX-cb-4H4" id="yQE-5h-vOK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KF8-1Z-32Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057.971014492754" y="118.52678571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tyg-IJ-Jkp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FuG-yQ-ZC7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mUl-z1-cVv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LMS-2v-jXk" kind="relationship" relationship="rootViewController" id="mn3-eM-WhC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aow-OS-zzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282.60869565217394" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
