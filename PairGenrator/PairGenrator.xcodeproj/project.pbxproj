@@ -15,6 +15,7 @@
 		4E941F2E2440CAC800B8F869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E941F2C2440CAC800B8F869 /* LaunchScreen.storyboard */; };
 		4E941F382440CB8900B8F869 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E941F372440CB8900B8F869 /* CoreData.swift */; };
 		4E941F3A2440CBF300B8F869 /* Person+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E941F392440CBF300B8F869 /* Person+Convenience.swift */; };
+		4E941F3D2440CDA300B8F869 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E941F3C2440CDA300B8F869 /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4E941F2F2440CAC800B8F869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E941F372440CB8900B8F869 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		4E941F392440CBF300B8F869 /* Person+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+Convenience.swift"; sourceTree = "<group>"; };
+		4E941F3C2440CDA300B8F869 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				4E941F362440CB1F00B8F869 /* Storyboard */,
 				4E941F272440CAC700B8F869 /* PairGenrator.xcdatamodeld */,
 				4E941F3B2440CC3B00B8F869 /* Model */,
+				4E941F3E2440CDA800B8F869 /* ModelController */,
 			);
 			path = PairGenrator;
 			sourceTree = "<group>";
@@ -95,6 +98,14 @@
 				4E941F392440CBF300B8F869 /* Person+Convenience.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4E941F3E2440CDA800B8F869 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				4E941F3C2440CDA300B8F869 /* PersonController.swift */,
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				4E941F1F2440CAC700B8F869 /* AppDelegate.swift in Sources */,
 				4E941F212440CAC700B8F869 /* SceneDelegate.swift in Sources */,
 				4E941F3A2440CBF300B8F869 /* Person+Convenience.swift in Sources */,
+				4E941F3D2440CDA300B8F869 /* PersonController.swift in Sources */,
 				4E941F292440CAC700B8F869 /* PairGenrator.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
