@@ -38,4 +38,25 @@ class PersonController {
     
     //MARK: - Helper Functions
     
+    //TODO: - Potential error
+    
+    func pairingUp() -> [[Person]]{
+        let randomPairs = persons.shuffled()
+        
+        var pairs = [[Person]]()
+        var pair = [Person]()
+        
+        for person in randomPairs {
+            if pair.count == 0 {
+                pair.append(person)
+            } else {
+                pair.append(person)
+                pairs.append(pair)
+                pair = [Person]()
+            }
+            
+        }
+        return pairs
+    }
+    
 }//End of class
