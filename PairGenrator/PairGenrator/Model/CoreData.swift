@@ -13,7 +13,7 @@ enum CoreDataStack {
     
     //MARK: - Core data stack
     static let container: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "PlaylistCoreData")
+        let container = NSPersistentContainer(name: "PairGenrator")
         container.loadPersistentStores { (_, error) in
             if let error = error {
                 fatalError("Failed to load persistet stores \(error)")

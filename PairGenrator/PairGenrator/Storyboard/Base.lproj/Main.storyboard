@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pairs Table View Controller-->
+        <!--Pairs List-->
         <scene sceneID="s0y-pr-7hU">
             <objects>
                 <tableViewController id="3IN-tN-NLv" customClass="PairsTableViewController" customModule="PairGenrator" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                             <outlet property="delegate" destination="3IN-tN-NLv" id="5Jx-kM-4JK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="f6e-xE-mH3">
+                    <navigationItem key="navigationItem" title="Pairs List" id="f6e-xE-mH3">
                         <barButtonItem key="leftBarButtonItem" title="Pair Up" style="plain" id="u5E-D7-aat">
                             <connections>
                                 <action selector="pairUpButtonTapped:" destination="3IN-tN-NLv" id="KF5-IM-Q2e"/>
@@ -50,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="1100" y="116"/>
         </scene>
-        <!--Person Detail View Controller-->
+        <!--Edit Name-->
         <scene sceneID="LPN-Tn-v3n">
             <objects>
                 <viewController id="nUT-r8-xYY" customClass="PersonDetailViewController" customModule="PairGenrator" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,8 +73,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="btV-3H-a5Y"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7iO-zq-snP">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="BkC-G5-2qd"/>
+                    <navigationItem key="navigationItem" title="Edit Name" id="7iO-zq-snP">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="BkC-G5-2qd">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="nUT-r8-xYY" id="7qc-Po-yac"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="tJT-51-Zbi" id="f3k-J5-gps"/>

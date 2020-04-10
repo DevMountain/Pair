@@ -56,6 +56,11 @@ class PersonController {
             }
             
         }
+        
+        if pair.count != 0 {
+            pairs.append(pair)
+        }
+        
         return pairs
     }
     

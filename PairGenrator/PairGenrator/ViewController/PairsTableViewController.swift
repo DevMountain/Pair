@@ -13,8 +13,15 @@ class PairsTableViewController: UITableViewController {
     //MARK: - Properties
     var pairs: [[Person]]?
 
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        generatePairs()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
     
     //MARK: - Actions
@@ -67,7 +74,6 @@ class PairsTableViewController: UITableViewController {
         return pairs?[section].count ?? 0
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "pairCell", for: indexPath)
 
