@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="MSb-Fd-c5T">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pairCell" id="MSb-Fd-c5T">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MSb-Fd-c5T" id="dcD-t7-wBz">
@@ -24,7 +24,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="nUT-r8-xYY" kind="show" id="LX7-JX-YW8"/>
+                                    <segue destination="nUT-r8-xYY" kind="show" identifier="toPersonDetailVC" id="LX7-JX-YW8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -34,8 +34,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="f6e-xE-mH3">
-                        <barButtonItem key="leftBarButtonItem" title="Pair Up" style="plain" id="u5E-D7-aat"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="bah-Zs-EDP"/>
+                        <barButtonItem key="leftBarButtonItem" title="Pair Up" style="plain" id="u5E-D7-aat">
+                            <connections>
+                                <action selector="pairUpButtonTapped:" destination="3IN-tN-NLv" id="KF5-IM-Q2e"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="bah-Zs-EDP">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="3IN-tN-NLv" id="Efu-1l-bYy"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wS-S4-z5O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -68,6 +76,9 @@
                     <navigationItem key="navigationItem" id="7iO-zq-snP">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="BkC-G5-2qd"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="tJT-51-Zbi" id="f3k-J5-gps"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I9D-Ui-GQp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
