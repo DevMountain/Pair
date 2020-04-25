@@ -82,12 +82,9 @@ class PairsTableViewController: UITableViewController, UITextFieldDelegate {
         present(alert, animated: true)
     }
     
-    
-
-    
-
-    
-    
-    
-
+    @IBAction func randomizeButtonTapped(_ sender: Any) {
+        PairController.shared.randomize()
+        
+        tableView.reloadData()
+    }
 }

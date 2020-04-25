@@ -90,6 +90,12 @@ class PairController {
         saveToPersistentStorage(persons: persons)
     }
     
+    func randomize() {
+        persons.shuffle()
+        
+        saveToPersistentStorage(persons: persons)
+    }
+    
     
     // MARK: - Persistence
     
