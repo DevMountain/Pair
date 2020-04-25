@@ -13,8 +13,48 @@ class PairController {
     // MARK: - Singleton
     static let shared = PairController()
     
+    
     // MARK: - Source of Truth
     var persons: [Person] = []
+    
+    
+    // MARK: - Properties
+    var pairings: [[Person]] {
+        get {
+            var pairings = [[Person]]()
+            var section: Int = 0
+            var row: Int = 0
+            
+            for name in persons {
+                if row == 0 {
+                    // create new section. then append.
+                    var sectionArray = [Person]()
+                    sectionArray.append(name)
+                    pairings.append(sectionArray)
+                    
+                    row = 1
+                }
+                else {
+                    // section already exists. just append
+                    var sectionArray = pairings[section]
+                    sectionArray.append(name)
+                    pairings[section] = sectionArray
+                                
+                    // increment section
+                    section += 1
+                    row = 0
+                }
+            }
+            
+            return pairings
+        }
+    }
+    
+    var sections: Int {
+        return pairings.count
+    }
+    
+    // MARK: - Initializer
     
     init() {
         loadFromPersistence()
@@ -39,7 +79,12 @@ class PairController {
         saveToPersistentStorage(persons: persons)
     }
     
-    func delete(index: Int) {
+    func delete(indexPath: IndexPath) {
+        let section = indexPath.section
+        let row = indexPath.row
+        
+        let index = (section * 2) + row
+        
         persons.remove(at: index)
         
         saveToPersistentStorage(persons: persons)

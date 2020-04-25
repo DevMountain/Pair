@@ -17,17 +17,24 @@ class PairsTableViewController: UITableViewController, UITextFieldDelegate {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return PairController.shared.sections
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return PairController.shared.persons.count
+        return PairController.shared.pairings[section].count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Group \(section + 1)"
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
         
-        let person = PairController.shared.persons[indexPath.row]
+        let section = indexPath.section
+        let row = indexPath.row
+        
+        let person = PairController.shared.pairings[section][row]
         
         cell.textLabel?.text = person.name
         
@@ -36,7 +43,7 @@ class PairsTableViewController: UITableViewController, UITextFieldDelegate {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            PairController.shared.delete(index: indexPath.row)
+            PairController.shared.delete(indexPath: indexPath)
             
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
