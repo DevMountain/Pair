@@ -45,7 +45,8 @@ class PairsTableViewController: UITableViewController, UITextFieldDelegate {
         if editingStyle == .delete {
             PairController.shared.delete(indexPath: indexPath)
             
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
+//            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
     
