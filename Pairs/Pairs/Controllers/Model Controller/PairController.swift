@@ -36,4 +36,8 @@ class PairController {
     func add(person: Person) {
         persons.append(person)
     }
+    
+    func delete(index: Int) {
+        persons.remove(at: index)
+    }
 }
