@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PairsTableViewController: UITableViewController {
+class PairsTableViewController: UITableViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,40 @@ class PairsTableViewController: UITableViewController {
         
         return cell
     }
+    
+    
+    // MARK: - Actions
+    
+    @IBAction func addButtonTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Add Person", message: "Add someone new to the list.", preferredStyle: .alert)
+        
+        alert.addTextField { (textField) in
+            textField.delegate = self
+            textField.placeholder = "Full Name"
+            textField.autocorrectionType = .no
+            textField.autocapitalizationType = .words
+        }
+        
+        let saveButton = UIAlertAction(title: "Save", style: .default) { (_) in
+            guard let name = alert.textFields?.first?.text,
+                       !name.isEmpty else { return }
+            
+            // add this name into our source of truth
+            
+            let person = Person(name: name)
+            PairController.shared.add(person: person)
+            
+            // reload the table view
+            self.tableView.reloadData()
+        }
+        alert.addAction(saveButton)
+        
+        let cancelButton = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(cancelButton)
+        
+        present(alert, animated: true)
+    }
+    
     
 
     

@@ -62,7 +62,7 @@
 			children = (
 				AC6701D62454A21300D00F88 /* Controllers */,
 				AC6701D32454A19C00D00F88 /* Model */,
-				AC6701C42454A05200D00F88 /* Main.storyboard */,
+				AC6701DD2454A68000D00F88 /* Storyboard */,
 				AC6701D22454A08A00D00F88 /* Resources */,
 			);
 			path = Pairs;
@@ -111,6 +111,14 @@
 				AC6701DB2454A43200D00F88 /* PairsTableViewController.swift */,
 			);
 			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		AC6701DD2454A68000D00F88 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AC6701C42454A05200D00F88 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

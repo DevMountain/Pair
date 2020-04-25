@@ -38,7 +38,13 @@
                             <outlet property="delegate" destination="PXU-1q-0OJ" id="ISR-1x-NYq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pair Randomizer" id="qNS-Le-guh"/>
+                    <navigationItem key="navigationItem" title="Pair Randomizer" id="qNS-Le-guh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vRY-Xd-bUL">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="PXU-1q-0OJ" id="uHq-EU-y9P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zU4-98-dc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
