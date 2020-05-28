@@ -16,6 +16,8 @@
 		505F367C24801FD60048C2A8 /* Student+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F367B24801FD60048C2A8 /* Student+Convenience.swift */; };
 		505F367E248020630048C2A8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F367D248020630048C2A8 /* CoreDataStack.swift */; };
 		505F3680248021650048C2A8 /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F367F248021650048C2A8 /* StudentController.swift */; };
+		505F3682248029110048C2A8 /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F3681248029110048C2A8 /* StudentTableViewController.swift */; };
+		505F3684248029360048C2A8 /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F3683248029360048C2A8 /* StudentDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		505F367B24801FD60048C2A8 /* Student+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+Convenience.swift"; sourceTree = "<group>"; };
 		505F367D248020630048C2A8 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		505F367F248021650048C2A8 /* StudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
+		505F3681248029110048C2A8 /* StudentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
+		505F3683248029360048C2A8 /* StudentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 		505F367924801C740048C2A8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				505F3681248029110048C2A8 /* StudentTableViewController.swift */,
+				505F3683248029360048C2A8 /* StudentDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -196,11 +202,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				505F367E248020630048C2A8 /* CoreDataStack.swift in Sources */,
+				505F3682248029110048C2A8 /* StudentTableViewController.swift in Sources */,
 				505F3680248021650048C2A8 /* StudentController.swift in Sources */,
 				505F365F248018D00048C2A8 /* AppDelegate.swift in Sources */,
 				505F3669248018D00048C2A8 /* Randomizer.xcdatamodeld in Sources */,
 				505F3661248018D00048C2A8 /* SceneDelegate.swift in Sources */,
 				505F367C24801FD60048C2A8 /* Student+Convenience.swift in Sources */,
+				505F3684248029360048C2A8 /* StudentDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XG2KXXAH9;
 				INFOPLIST_FILE = Randomizer/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,6 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XG2KXXAH9;
 				INFOPLIST_FILE = Randomizer/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
