@@ -1,8 +1,8 @@
 //
 //  Student+Convenience.swift
-//  Randomizer
+//  StudentPairs
 //
-//  Created by Aaron Prestidge on 5/28/20.
+//  Created by Aaron Prestidge on 5/29/20.
 //  Copyright © 2020 AaronPrestidge. All rights reserved.
 //
 
