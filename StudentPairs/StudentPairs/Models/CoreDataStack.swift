@@ -1,8 +1,8 @@
 //
 //  CoreDataStack.swift
-//  Randomizer
+//  StudentPairs
 //
-//  Created by Aaron Prestidge on 5/28/20.
+//  Created by Aaron Prestidge on 5/29/20.
 //  Copyright © 2020 AaronPrestidge. All rights reserved.
 //
 
@@ -15,7 +15,7 @@ enum CoreDataStack {
         
         let appName = Bundle.main.object(forInfoDictionaryKey: (kCFBundleNameKey as String)) as! String
         let container = NSPersistentContainer(name: appName)
-        container.loadPersistentStores() { (storeDescription, error) in
+        container.loadPersistentStores() { (_, error) in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
