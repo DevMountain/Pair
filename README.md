@@ -4,6 +4,8 @@ In response to [Christopher Burke's answer](http://qr.ae/RCI2cL) to the question
 
 The details of the challenge are included below. Hints are included in the Guidelines.md file. Do your best to complete the challenge independently, without the hints or guidelines. However, use them if you are stuck for 20 minutes.
 
+Please look at the provided screenshots before starting. They demonstrate the application you are to create for this assessment and can be found on [this github page](https://github.com/DevMountain/Pair/edit/master).
+
 ## The Challenge
 
 Fork this repository. Complete the challenge, push your version with a clear commit history to your own Github profile.
