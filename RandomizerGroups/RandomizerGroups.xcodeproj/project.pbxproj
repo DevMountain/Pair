@@ -17,6 +17,7 @@
 		27FAB44E26D0012E0061D6A1 /* RandomizerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB44D26D0012E0061D6A1 /* RandomizerController.swift */; };
 		27FAB45126D004010061D6A1 /* RandomizerGroups+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB45026D004010061D6A1 /* RandomizerGroups+Convenience.swift */; };
 		27FAB45326D0095D0061D6A1 /* RandomizerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB45226D0095D0061D6A1 /* RandomizerTableViewController.swift */; };
+		27FAB45526D00EB40061D6A1 /* RandomizerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB45426D00EB40061D6A1 /* RandomizerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		27FAB44D26D0012E0061D6A1 /* RandomizerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerController.swift; sourceTree = "<group>"; };
 		27FAB45026D004010061D6A1 /* RandomizerGroups+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomizerGroups+Convenience.swift"; sourceTree = "<group>"; };
 		27FAB45226D0095D0061D6A1 /* RandomizerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerTableViewController.swift; sourceTree = "<group>"; };
+		27FAB45426D00EB40061D6A1 /* RandomizerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				27FAB45226D0095D0061D6A1 /* RandomizerTableViewController.swift */,
+				27FAB45426D00EB40061D6A1 /* RandomizerDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				27FAB44C26CFFFC70061D6A1 /* CoreDataStack.swift in Sources */,
 				27FAB43826CFFE4E0061D6A1 /* RandomizerGroups.xcdatamodeld in Sources */,
 				27FAB42E26CFFE4E0061D6A1 /* AppDelegate.swift in Sources */,
+				27FAB45526D00EB40061D6A1 /* RandomizerDetailViewController.swift in Sources */,
 				27FAB44E26D0012E0061D6A1 /* RandomizerController.swift in Sources */,
 				27FAB45126D004010061D6A1 /* RandomizerGroups+Convenience.swift in Sources */,
 				27FAB43026CFFE4E0061D6A1 /* SceneDelegate.swift in Sources */,

@@ -11,7 +11,7 @@
         <!--Pair Randomizer-->
         <scene sceneID="4jH-XM-Yzk">
             <objects>
-                <tableViewController id="aMn-XN-Vrp" sceneMemberID="viewController">
+                <tableViewController id="aMn-XN-Vrp" customClass="RandomizerTableViewController" customModule="RandomizerGroups" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sb4-0x-Q3d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,39 +41,37 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Pair Randomizer" id="9f1-jo-lra">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="oEa-2i-zFf">
-                                <connections>
-                                    <segue destination="xoV-Qv-Aro" kind="show" id="YwC-CW-hXP"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Randomize" id="QG7-bE-YNS"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="leftBarButtonItem" title="Randomize" id="QG7-bE-YNS"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oEa-2i-zFf">
+                            <connections>
+                                <segue destination="xoV-Qv-Aro" kind="show" id="YwC-CW-hXP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZL-IV-YEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="167" y="149"/>
         </scene>
-        <!--View Controller-->
+        <!--Randomizer Detail View Controller-->
         <scene sceneID="SRk-AS-Mox">
             <objects>
-                <viewController id="xoV-Qv-Aro" sceneMemberID="viewController">
+                <viewController id="xoV-Qv-Aro" customClass="RandomizerDetailViewController" customModule="RandomizerGroups" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kom-zP-pBI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="97" translatesAutoresizingMaskIntoConstraints="NO" id="Mab-Iz-BCg">
-                                <rect key="frame" x="122" y="124" width="170.5" height="34"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dJ3-ge-jkX">
+                                <rect key="frame" x="41.5" y="124" width="331" height="34"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoI-c1-URQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="34"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoI-c1-URQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFF-jc-wjy">
-                                        <rect key="frame" x="138.5" y="0.0" width="32" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFF-jc-wjy">
+                                        <rect key="frame" x="57.5" y="0.0" width="273.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -83,19 +81,26 @@
                         <viewLayoutGuide key="safeArea" id="2Vf-G5-NxW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Mab-Iz-BCg" firstAttribute="top" secondItem="2Vf-G5-NxW" secondAttribute="top" constant="36" id="KNo-Y0-fCe"/>
-                            <constraint firstItem="Mab-Iz-BCg" firstAttribute="width" secondItem="kom-zP-pBI" secondAttribute="width" multiplier="0.411836" id="Nbb-FN-S2s"/>
-                            <constraint firstItem="Mab-Iz-BCg" firstAttribute="centerX" secondItem="2Vf-G5-NxW" secondAttribute="centerX" id="fKB-5n-4G6"/>
-                            <constraint firstItem="Mab-Iz-BCg" firstAttribute="height" secondItem="kom-zP-pBI" secondAttribute="height" multiplier="0.0379464" id="tls-EO-4Ba"/>
+                            <constraint firstItem="dJ3-ge-jkX" firstAttribute="width" secondItem="kom-zP-pBI" secondAttribute="width" multiplier="0.8" id="6oB-ex-1UT"/>
+                            <constraint firstItem="dJ3-ge-jkX" firstAttribute="centerX" secondItem="2Vf-G5-NxW" secondAttribute="centerX" id="Hzz-zk-87s"/>
+                            <constraint firstItem="dJ3-ge-jkX" firstAttribute="top" secondItem="2Vf-G5-NxW" secondAttribute="top" constant="36" id="en4-Ec-CCT"/>
+                            <constraint firstItem="dJ3-ge-jkX" firstAttribute="height" secondItem="kom-zP-pBI" secondAttribute="height" multiplier="0.0379464" id="r2g-vl-Ce5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="d33-5B-90H">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="9m3-42-hHT"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="9m3-42-hHT">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="xoV-Qv-Aro" id="ZcY-j0-O49"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="hFF-jc-wjy" id="J9I-td-qle"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak1-jw-INV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="149"/>
+            <point key="canvasLocation" x="889.85507246376824" y="148.66071428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6fU-GQ-aiA">
