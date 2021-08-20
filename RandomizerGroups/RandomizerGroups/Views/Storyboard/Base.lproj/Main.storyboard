@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sbn-8H-6Cc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameCell" textLabel="Jrt-OL-R4R" style="IBUITableViewCellStyleDefault" id="9O0-Py-4hz">
+                            <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personCell" textLabel="Jrt-OL-R4R" style="IBUITableViewCellStyleDefault" id="9O0-Py-4hz">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9O0-Py-4hz" id="5DR-qh-q44">
@@ -41,7 +42,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Pair Randomizer" id="9f1-jo-lra">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="oEa-2i-zFf"/>
+                            <barButtonItem systemItem="add" id="oEa-2i-zFf">
+                                <connections>
+                                    <segue destination="xoV-Qv-Aro" kind="show" id="YwC-CW-hXP"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem title="Randomize" id="QG7-bE-YNS"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -49,6 +54,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZL-IV-YEt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="167" y="149"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SRk-AS-Mox">
+            <objects>
+                <viewController id="xoV-Qv-Aro" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kom-zP-pBI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="97" translatesAutoresizingMaskIntoConstraints="NO" id="Mab-Iz-BCg">
+                                <rect key="frame" x="122" y="124" width="170.5" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoI-c1-URQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hFF-jc-wjy">
+                                        <rect key="frame" x="138.5" y="0.0" width="32" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Vf-G5-NxW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mab-Iz-BCg" firstAttribute="top" secondItem="2Vf-G5-NxW" secondAttribute="top" constant="36" id="KNo-Y0-fCe"/>
+                            <constraint firstItem="Mab-Iz-BCg" firstAttribute="width" secondItem="kom-zP-pBI" secondAttribute="width" multiplier="0.411836" id="Nbb-FN-S2s"/>
+                            <constraint firstItem="Mab-Iz-BCg" firstAttribute="centerX" secondItem="2Vf-G5-NxW" secondAttribute="centerX" id="fKB-5n-4G6"/>
+                            <constraint firstItem="Mab-Iz-BCg" firstAttribute="height" secondItem="kom-zP-pBI" secondAttribute="height" multiplier="0.0379464" id="tls-EO-4Ba"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="d33-5B-90H">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="9m3-42-hHT"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ak1-jw-INV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6fU-GQ-aiA">

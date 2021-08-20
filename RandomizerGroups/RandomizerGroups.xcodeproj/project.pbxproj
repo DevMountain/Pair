@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		27FAB42E26CFFE4E0061D6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB42D26CFFE4E0061D6A1 /* AppDelegate.swift */; };
 		27FAB43026CFFE4E0061D6A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB42F26CFFE4E0061D6A1 /* SceneDelegate.swift */; };
-		27FAB43226CFFE4E0061D6A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB43126CFFE4E0061D6A1 /* ViewController.swift */; };
 		27FAB43526CFFE4E0061D6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FAB43326CFFE4E0061D6A1 /* Main.storyboard */; };
 		27FAB43826CFFE4E0061D6A1 /* RandomizerGroups.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB43626CFFE4E0061D6A1 /* RandomizerGroups.xcdatamodeld */; };
 		27FAB43A26CFFE4F0061D6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FAB43926CFFE4F0061D6A1 /* Assets.xcassets */; };
@@ -17,13 +16,13 @@
 		27FAB44C26CFFFC70061D6A1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB44B26CFFFC70061D6A1 /* CoreDataStack.swift */; };
 		27FAB44E26D0012E0061D6A1 /* RandomizerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB44D26D0012E0061D6A1 /* RandomizerController.swift */; };
 		27FAB45126D004010061D6A1 /* RandomizerGroups+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB45026D004010061D6A1 /* RandomizerGroups+Convenience.swift */; };
+		27FAB45326D0095D0061D6A1 /* RandomizerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAB45226D0095D0061D6A1 /* RandomizerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27FAB42A26CFFE4E0061D6A1 /* RandomizerGroups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomizerGroups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FAB42D26CFFE4E0061D6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27FAB42F26CFFE4E0061D6A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27FAB43126CFFE4E0061D6A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27FAB43426CFFE4E0061D6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27FAB43726CFFE4E0061D6A1 /* RandomizerGroups.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomizerGroups.xcdatamodel; sourceTree = "<group>"; };
 		27FAB43926CFFE4F0061D6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		27FAB44B26CFFFC70061D6A1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		27FAB44D26D0012E0061D6A1 /* RandomizerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerController.swift; sourceTree = "<group>"; };
 		27FAB45026D004010061D6A1 /* RandomizerGroups+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomizerGroups+Convenience.swift"; sourceTree = "<group>"; };
+		27FAB45226D0095D0061D6A1 /* RandomizerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,6 @@
 				27FAB44626CFFF470061D6A1 /* Controllers */,
 				27FAB44926CFFF590061D6A1 /* Views */,
 				27FAB44426CFFE690061D6A1 /* Resources */,
-				27FAB43126CFFE4E0061D6A1 /* ViewController.swift */,
 			);
 			path = RandomizerGroups;
 			sourceTree = "<group>";
@@ -106,6 +105,7 @@
 		27FAB44726CFFF4B0061D6A1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				27FAB45226D0095D0061D6A1 /* RandomizerTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,9 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FAB45326D0095D0061D6A1 /* RandomizerTableViewController.swift in Sources */,
 				27FAB44C26CFFFC70061D6A1 /* CoreDataStack.swift in Sources */,
 				27FAB43826CFFE4E0061D6A1 /* RandomizerGroups.xcdatamodeld in Sources */,
-				27FAB43226CFFE4E0061D6A1 /* ViewController.swift in Sources */,
 				27FAB42E26CFFE4E0061D6A1 /* AppDelegate.swift in Sources */,
 				27FAB44E26D0012E0061D6A1 /* RandomizerController.swift in Sources */,
 				27FAB45126D004010061D6A1 /* RandomizerGroups+Convenience.swift in Sources */,
